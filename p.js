@@ -517,7 +517,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     const emojiPos = document.getElementById("emojis-pos");
-    
+    emojisPos.style.height = document.getElementById('emojiContainer').offsetHeight + "px";
+
     let randomPigEmoji = pigEmojis[Math.floor(Math.random() * pigEmojis.length)];
     let randomSize = Math.floor(Math.random() * 21) + 20;
     let randomRotation = Math.floor(Math.random() * 361);
