@@ -1,3 +1,9 @@
+html {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+    
 body {
     width: 200px;
     height: 180px;
@@ -7,9 +13,6 @@ body {
     padding: 10px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 header button {
@@ -363,6 +366,7 @@ button:hover {
 }
 
 #emoji-container span {
+    left: 50%;
     position: absolute;
     animation: fadeOut 0.5s linear forwards;
 }
