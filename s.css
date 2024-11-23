@@ -1,9 +1,3 @@
-html {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-    
 body {
     width: 200px;
     height: 180px;
@@ -366,7 +360,7 @@ button:hover {
 }
 
 #emoji-container span {
-    position: relative;
+    position: absloute;
     animation: fadeOut 0.5s linear forwards;
 }
 
