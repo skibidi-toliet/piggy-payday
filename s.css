@@ -15,6 +15,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#emojis-pos {
+    position: relative;
+}
+
 header button {
     padding: 2px;
     margin-left: 1px;
