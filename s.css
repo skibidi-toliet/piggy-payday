@@ -7,6 +7,9 @@ body {
     padding: 10px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 header button {
@@ -360,7 +363,7 @@ button:hover {
 }
 
 #emoji-container span {
-    position: absolute;
+    position: relative;
     animation: fadeOut 0.5s linear forwards;
 }
 
