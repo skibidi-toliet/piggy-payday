@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const areusure = document.getElementById("areusure");
   const emojiContainer = document.getElementById("emoji-container");
   const emojiPos = document.getElementById("emojis-pos");
-  emojisPos.style.height = emojiContainer.offsetHeight + "px";
+  emojisPos.style.height = emojiContainer.offsetHeight;
 
   // sounds
   const jemSound = document.getElementById("gem");
