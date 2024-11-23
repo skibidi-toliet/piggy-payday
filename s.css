@@ -360,7 +360,7 @@ button:hover {
 }
 
 #emoji-container span {
-    position: absloute;
+    position: absolute;
     animation: fadeOut 0.5s linear forwards;
 }
 
