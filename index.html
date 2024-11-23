@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Piggy Payday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading-screen.css">
+    <script src="popup.js"></script>
+    <meta charset='UTF-8' />
+</head>
+
+<div id="loading-screen">
+    <img id="loading-screen-image" src="img/picon128.png">
+    <i id="enter"></i>
+</div>
+
+<div id="home">
+    <header id="home-header">
+        <button class="goCasino">Casino</button>
+        <button class="goCredits">Credits</button>
+        <button class="goReset">Reset</button>
+        <button class="goVersion">v1.1.7</button>
+    </header>
+
+    <div id="emoji-container">
+        <h2 id="piggyTitle">Piggy Payday</h2>
+        <p id="piggyCounter">Pigs 0</p>
+        <p id="myMultiplier">Multiplier x1</p>
+        <div id="buttons-container">
+            <button id="myButton">Click!</button>
+            <audio id="secret" src="sounds/halloween.mp3" type="audio/mpeg"></audio>
+            <audio id="click" src="sounds/click.mp3" type="audio/mpeg"></audio>
+            <audio id="cashout" src="sounds/cashout.mp3" type="audio/mpeg"></audio>
+            <audio id="gem" src="sounds/gem.mp3" type="audio/mpeg"></audio>
+            <audio id="bomb" src="sounds/bomb.mp3" type="audio/mpeg"></audio>
+            <audio id="rollwin" src="sounds/rollwin.mp3" type="audio/mpeg"></audio>
+            <audio id="roll" src="sounds/roll.mp3" type="audio/mpeg"></audio>
+            <audio id="dicewin" src="sounds/dicewin.mp3" type="audio/mpeg"></audio>
+            <audio id="dicelose" src="sounds/dicelose.mp3" type="audio/mpeg"></audio>
+        </div>
+        <i id="myText"></i>
+    </div>
+</div>
+
+<div id="credits">
+    <header id="credits-header">
+        <button class="goHome">Home</button>
+        <button class="goCasino">Casino</button>
+        <button class="goReset">Reset</button>
+        <button class="goVersion">v1.1.7</button>
+    </header>
+
+    <div class="credits-container">
+        <b> Piggy Payday was developed by Simon</b>
+        <p> This game was initially a small project, but now it's getting constantly updated with feedback from friends.
+        </p>
+        <p class="center">me — myself — I </p>
+    </div>
+</div>
+
+<div id="areusure">
+    <header id="areusure-header">
+        <div class="prestige-container">
+            <img id="prestigePig" src="img/picon128.png">
+            <p id="prestigeLevel"> Your prestige level is 0</p>
+        </div>
+        <p id="areusure-text"></p>
+        <b> Are you sure you want to reset?</b>
+        <button id="yesreset">Yes</button>
+        <button id="noreset">No</button>
+    </header>
+</div>
+
+<div id="version">
+    <header id="version-header">
+        <button class="goHome">Home</button>
+        <button class="goCasino">Casino</button>
+        <button class="goCredits">Credits</button>
+        <button class="goReset">Reset</button>
+    </header>
+    <div class="version-container">
+        <b> Piggy Payday v1.1.7</b>
+        <p>
+            * Back to normal. <br>
+        </p>
+    </div>
+</div>
+
+<div id="stats">
+    <header id="stats-header">
+        <button class="goHome">Home</button>
+        <button class="goCasino">Casino</button>
+        <button class="goCredits">Credits</button>
+        <button class="goReset">Reset</button>
+    </header>
+    <div class="stats-container">
+        <b> Casino Statistics</b>
+        <p id="stats-text">
+            <b>Rank:</b> Casual <br>
+            <b>Wagered:</b> 0 Pigs <br>
+            <b>Profit:</b> 0 Pigs <br>
+            <b>Lost:</b> 0 Pigs <br>
+            <b>Wins:</b> 0 <br>
+            <b>Losses:</b> 0
+        </p>
+    </div>
+</div>
+
+<div id="casino">
+    <header id="casino-header">
+        <button class="goHome">Home</button>
+        <button class="goCredits">Credits</button>
+        <button class="goReset">Reset</button>
+        <button class="goVersion">v1.1.7</button>
+        <button class="goStats">ⓘ</button>
+    </header>
+
+    <nav id="casino-nav">
+        <button class="casino-nav-active" id="goLotto">Lotto</button>
+        <button id="goCoinflip">Coinflip</button>
+        <button id="goMines">Mines</button>
+        <button id="goGoal">Goal</button>
+        <button id="goDice">Dice</button>
+    </nav>
+
+    <div id="lottoCasino">
+        <div class="casino-container">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+        </div>
+
+        <div class="casino-container">
+            <input type="number" id="money" min="1">
+            <button id="gambleMoney">🎰</button>
+        </div>
+        <p id="lottoText"></p>
+    </div>
+
+    <div id="lottoCoinflip">
+        <div class="coin" id="coin">
+            <div class="heads">
+                <img src="img/HEADS_SILVER.png">
+            </div>
+            <div class="tails">
+                <img src="img/TAILS_SILVER.png">
+            </div>
+        </div>
+
+        <div class="casino-container-2">
+            <button id="guess-heads">H</button>
+            <input type="number" id="money2" min="1">
+            <button id="guess-tails">T</button>
+        </div>
+        <p id="coinflipText"></p>
+    </div>
+
+    <div id="lottoMines">
+        <div class="box-mines" id="box1x1" data-row="1" data-col="1"></div>
+        <div class="box-mines" id="box2x1" data-row="2" data-col="1"></div>
+        <div class="box-mines" id="box3x1" data-row="3" data-col="1"></div>
+        <div class="box-mines" id="box4x2" data-row="4" data-col="2"></div>
+        <div class="box-mines" id="box5x2" data-row="5" data-col="2"></div>
+        <div class="box-mines" id="box6x2" data-row="6" data-col="2"></div>
+        <div class="box-mines" id="box7x3" data-row="7" data-col="3"></div>
+        <div class="box-mines" id="box8x3" data-row="8" data-col="3"></div>
+        <div class="box-mines" id="box9x3" data-row="9" data-col="3"></div>
+    </div>
+
+    <div id="container3" class="casino-container-3">
+        <button id="cashoutButton">💸</button>
+        <input type="number" id="money3" min="1">
+        <button id="moneyButton">🎰</button>
+        <p id="minesText"></p>
+    </div>
+
+    <div id="lottoGoal">
+        <div id="row-1">
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+        </div>
+        <div id="row-2">
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+        </div>
+        <div id="row-3">
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+        </div>
+        <div id="row-4">
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+        </div>
+        <div id="row-5">
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+        </div>
+        <div id="row-6">
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+            <div class="box-goal"></div>
+        </div>
+        <p id="message"> </p>
+    </div>
+
+    <div id="container4" class="casino-container-4">
+        <button id="cashoutButton2">💸</button>
+        <input type="number" id="money4" min="1">
+        <button id="moneyButton2">🎰</button>
+        <p id="goalText"></p>
+    </div>
+
+    <div id="lottoDice">
+        <div class="diceContainer">
+            <div class="dice-p" id="dice-p">
+                <div class="diceValue" id="diceValue"></div>
+                <img class="diceImg" id="diceImg" src="/img/dice.png" alt="">
+            </div>
+        </div>
+        <input id="rs-range-line" class="rs-range" type="range" value="50" min="2" max="98">
+
+        <div class="box-minmax">
+            <div>0</div>
+            <div>50</div>
+            <div>100</div>
+        </div>
+
+        <div id="rollOver"></div>
+        <div id="multiplierDice"></div>
+    </div>
+
+    <div id="container5" class="casino-container-5">
+        <div>
+            <input type="number" id="money5" min="1">
+            <button id="moneyButton3">🎰</button>
+        </div>
+        <div id="diceText"></div>
+    </div>
+</div>
+
+</html>
