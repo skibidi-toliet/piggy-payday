@@ -15,12 +15,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#emojis-pos {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
 header button {
     padding: 2px;
     margin-left: 1px;
@@ -372,7 +366,7 @@ button:hover {
 }
 
 #emoji-container span {
-    position: absolute;
+    position: relative;
     animation: fadeOut 0.5s linear forwards;
 }
 
