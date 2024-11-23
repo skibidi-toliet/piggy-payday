@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const stats = document.getElementById("stats")
   const areusure = document.getElementById("areusure");
   const emojiContainer = document.getElementById("emoji-container");
+  const emojiPos = document.getElementById("emojis-pos");
 
   // sounds
   const jemSound = document.getElementById("gem");
@@ -516,7 +517,6 @@ document.addEventListener("DOMContentLoaded", function () {
       count += multiplierCount;
     }
     
-    const emojiPos = document.getElementById("emojis-pos");
     emojisPos.style.height = emojiContainer.offsetHeight + "px";
 
     let randomPigEmoji = pigEmojis[Math.floor(Math.random() * pigEmojis.length)];
