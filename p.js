@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const stats = document.getElementById("stats")
   const areusure = document.getElementById("areusure");
   const emojiContainer = document.getElementById("emoji-container");
-  const emojiPos = document.getElementById("emojis-pos");
-  emojisPos.style.height = emojiContainer.offsetHeight;
 
   // sounds
   const jemSound = document.getElementById("gem");
@@ -517,15 +515,15 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       count += multiplierCount;
     }
-    
+
     let randomPigEmoji = pigEmojis[Math.floor(Math.random() * pigEmojis.length)];
     let randomSize = Math.floor(Math.random() * 21) + 20;
     let randomRotation = Math.floor(Math.random() * 361);
     let randomX = Math.floor(
-      Math.random() * (emojiPos.offsetWidth - randomSize)
+      Math.random() * (emojiContainer.offsetWidth - randomSize)
     );
     let randomY = Math.floor(
-      Math.random() * (emojiPos.offsetHeight - randomSize)
+      Math.random() * (emojiContainer.offsetHeight - randomSize)
     );
     let emojiSpan = document.createElement("span");
 
@@ -534,10 +532,10 @@ document.addEventListener("DOMContentLoaded", function () {
     emojiSpan.style.left = `${randomX}px`;
     emojiSpan.style.top = `${randomY}px`;
     emojiSpan.textContent = randomPigEmoji;
-    emojiPos.appendChild(emojiSpan);
+    emojiContainer.appendChild(emojiSpan);
 
     setTimeout(() => {
-      emojiPos.removeChild(emojiSpan);
+      emojiContainer.removeChild(emojiSpan);
     }, 500);
 
     counter.textContent = "Pigs +" + count.toLocaleString();
