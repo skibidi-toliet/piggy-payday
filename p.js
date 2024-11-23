@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const areusure = document.getElementById("areusure");
   const emojiContainer = document.getElementById("emoji-container");
   const emojiPos = document.getElementById("emojis-pos");
+  emojisPos.style.height = emojiContainer.offsetHeight + "px";
 
   // sounds
   const jemSound = document.getElementById("gem");
@@ -517,8 +518,6 @@ document.addEventListener("DOMContentLoaded", function () {
       count += multiplierCount;
     }
     
-    emojisPos.style.height = emojiContainer.offsetHeight + "px";
-
     let randomPigEmoji = pigEmojis[Math.floor(Math.random() * pigEmojis.length)];
     let randomSize = Math.floor(Math.random() * 21) + 20;
     let randomRotation = Math.floor(Math.random() * 361);
