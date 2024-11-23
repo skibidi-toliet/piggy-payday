@@ -1,3 +1,2 @@
-# hi
-i port many games so uhh
-justplay normally\
+simon's game
+coded into website by skibidi toliet
