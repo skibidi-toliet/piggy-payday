@@ -1,0 +1,528 @@
+body {
+    width: 200px;
+    height: 180px;
+    background-color: #f1f1f1;
+    border: 1px solid #F7879A;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+header button {
+    padding: 2px;
+    margin-left: 1px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+}
+
+#casino-header {
+    display: inline-flex;
+    gap: 2px;
+}
+
+body p {
+    margin: 0;
+}
+
+#frankenstein,
+#frankenstein:hover {
+    background: none;
+    border: none;
+    padding-left: 3px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+body h2 {
+    color: #F7879A;
+}
+
+.upgrade-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+#piggyCounter,
+#myMultiplier,
+#piggyTitle,
+#buttons-container {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#myButton {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.version-container,
+.stats-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.version-container p,
+.stats-container p {
+    margin-top: 10px;
+}
+
+.credits-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.credits-container p {
+    margin-top: 10px;
+}
+
+#casino,
+#credits,
+#version,
+#stats {
+    display: none;
+}
+
+#casino-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -10px;
+    width: 110%;
+}
+
+#areusure {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#areusure-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#areusure b {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#yesreset,
+#noreset {
+    padding: 5px;
+    margin: 5px;
+    /* Add some space between the buttons */
+}
+
+#casino-nav button {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    background-color: #ccc;
+}
+
+#casino-nav button:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#casino-nav button.casino-nav-active {
+    background-color: #f1f1f1;
+}
+
+.casino-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.casino-container input {
+    width: 70px;
+}
+
+.casino-container button {
+    font-size: 12px;
+}
+
+.casino-container-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -6px;
+}
+
+.casino-container-2 input {
+    width: 70px;
+}
+
+.casino-container-3,
+.casino-container-4 {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7px;
+    font-size: 14.5px;
+    height: 20px;
+}
+
+.casino-container-3 input,
+.casino-container-4 input,
+.casino-container-5 input {
+    width: 70px;
+}
+
+.casino-container-3 button,
+.casino-container-4 button,
+.casino-container-5 button {
+    font-size: 11px;
+}
+
+.box {
+    font-size: 22px;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.box-mines:hover {
+    background-color: #ccc !important;
+    cursor: pointer;
+}
+
+#lottoMines {
+    display: contents;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box-mines {
+    height: 26px;
+    width: 26px;
+    position: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1px;
+    font-size: 17px;
+    background-color: white;
+}
+
+#lottoText,
+#coinflipText,
+#minesText,
+#diceText,
+#lottoGoal {
+    display: flex;
+    justify-content: center;
+}
+
+#myText {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    font-size: 1em;
+}
+
+.bomb,
+.diamond {
+    font-size: 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+#lottoCoinflip,
+#lottoMines {
+    display: none;
+}
+
+.coin {
+    height: 55px;
+    width: 55px;
+    position: relative;
+    margin: 10px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.coin img {
+    width: 50px;
+}
+
+.heads,
+.tails {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tails {
+    transform: rotateX(180deg);
+}
+
+@keyframes spin-tails {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(1980deg);
+    }
+}
+
+@keyframes spin-heads {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(2160deg);
+    }
+}
+
+.spin-tails {
+    animation: spin-tails 2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.spin-heads {
+    animation: spin-heads 2.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+#lottoGoal {
+    display: grid;
+    grid-template-columns: repeat(6, 30px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box-goal {
+    height: 26px;
+    width: 26px;
+    position: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1px;
+    font-size: 17px;
+    background-color: white;
+    user-select: none;
+
+}
+
+.box-goal:hover {
+    background-color: #ccc !important;
+    cursor: pointer;
+}
+
+#emoji-container span {
+    position: absolute;
+    animation: fadeOut 0.5s linear forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+.casino-container-5 {
+    display: none;
+    margin-top: 7px;
+    font-size: 14.5px;
+    height: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lottoDice {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    height: 100px;
+    width: 100%;
+}
+
+#lottoDice .rs-range {
+    border-radius: 8px;
+    height: 4px;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 6px;
+    -webkit-appearance: none;
+    height: 12px;
+    background: black;
+    border-radius: 2px;
+}
+
+#lottoDice .box-minmax {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 3px;
+    height: 10px;
+    width: 100%;
+}
+
+#lottoDice .box-minmax :nth-child(1) {
+    position: relative;
+    left: -2px;
+}
+
+#lottoDice .box-minmax :nth-child(2) {
+    padding-left: 10px;
+}
+
+#lottoDice .box-minmax :nth-child(3) {
+    position: relative;
+    right: -5px;
+}
+
+#rollOver,
+#multiplierDice,
+#prestigeLevel,
+#areusure-text {
+    font-size: 0.8rem;
+}
+
+#prestigePig {
+    width: 15%;
+}
+
+.prestige-container {
+    clear: both;
+    /* This ensures that no floating elements from outside affect this container */
+}
+
+.diceContainer {
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+
+.dice-p {
+    z-index: 10;
+    position: absolute;
+    left: 80%;
+}
+
+.diceValue {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding-top: 6px;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.diceImg {
+    position: absolute;
+    width: 25px;
+    margin-bottom: 4px;
+}
+
+@-moz-keyframes moveLeftToRight {
+    0% {
+        left: var(--previous-position);
+    }
+
+    100% {
+        left: var(--left-position);
+    }
+}
+
+@-ms-keyframes moveLeftToRight {
+    0% {
+        left: var(--previous-position);
+    }
+
+    100% {
+        left: var(--left-position);
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        left: var(--previous-position);
+    }
+
+    100% {
+        left: var(--left-position);
+    }
+}
+
+@-webkit-keyframes moveLeftToRight {
+    0% {
+        left: var(--previous-position);
+    }
+
+    100% {
+        left: var(--left-position);
+    }
+}
+
+.rollIn {
+    -webkit-animation: 100ms linear, moveLeftToRight 0.3s linear;
+    -moz-animation: 100ms linear, moveLeftToRight 0.3s linear;
+    -ms-animation: 100ms linear, moveLeftToRight 0.3s linear;
+    animation: 100ms linear, moveLeftToRight 0.3s linear;
+
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
