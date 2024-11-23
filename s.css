@@ -1,4 +1,10 @@
-container69 {
+html {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#container69 {
     align-items: center;
     display: flex;
     justify-content: center;
