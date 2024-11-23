@@ -447,13 +447,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (multiplierST !== null) {
     multiplierCount = multiplierST;
-    multiplier.textContent = "Multiplier x" + multiplierCount.toLocaleString();
+    multiplier.textContent = "Multiplier x" + multiplierST.toLocaleString();
   }
   if (descriptionST !== null) {
     myText.textContent = descriptionST;
   }
   if (prestigeST !== null) {
-    prestigeCounter = prestige;
+    prestigeCounter = prestigeST;
     prestigeLevelText.textContent = "Your prestige level is: " + prestige;
 
     if (prestigeST != 1) {
@@ -468,17 +468,20 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("loading-screen-image").src = "img/prestige" + prestige + ".png";
   }
   if (statisticsST !== null) {
-    console.log(statisticsST);
-    casinoStatsState.rank = statisticsST.rank;
-    casinoStatsState.wagered = statisticsST.wagered;
-    casinoStatsState.profit = statisticsST.profit;
-    casinoStatsState.lost = statisticsST.lost;
-    casinoStatsState.wins = statisticsST.wins;
-    casinoStatsState.losses = statisticsST.losses;
+    statistics = statisticsST;
+
+    console.log(statistics)
+    casinoStatsState.rank = statistics.rank
+    casinoStatsState.wagered = statistics.wagered
+    casinoStatsState.profit = statistics.profit
+    casinoStatsState.lost = statistics.lost
+    casinoStatsState.wins = statistics.wins
+    casinoStatsState.losses = statistics.losses
   }
   if (upgradesST !== null) {
-    upgradesST.forEach((upgrade) => {
-      upgradesST.purchased = upgradesST.purchased || false;
+    upgrades = upgradesST;
+    upgrades.forEach((upgrade) => {
+      upgrade.purchased = upgrade.purchased || false;
     });
   }
 
